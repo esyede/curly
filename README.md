@@ -2,12 +2,17 @@
 Standalone cURL library (single file, no dependencies)
 
 
+
 ### Requirements
   - PHP 5.4 or newer
 
 
+
+
 ### Installation
 Download the file from [release page](https://github.com/esyede/curly) and drop to your project. That's it.
+
+
 
 
 ### Sending request
@@ -43,6 +48,7 @@ $parameters = ['id' => 6];
 $response = Curl::delete('https://reqres.in/api/users', $parameters);
 ```
 
+
 **Downloading file:**
 ```php
 $target = 'https://github.com/esyede/eddie/archive/master.zip';
@@ -52,6 +58,7 @@ if (Curl::download($target, $destination)) {
 	// Yay! it's downloaded!
 }
 ```
+
 
 
 ### Receiving response
@@ -90,6 +97,6 @@ List of supported options is available on the [PHP cURL documentation](https://w
 That pretty much it. Thank you for stopping by!
 
 
-### License
 
+### License
 This library is licensed under the [MIT License](http://opensource.org/licenses/MIT)
