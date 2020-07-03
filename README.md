@@ -10,7 +10,7 @@ Standalone cURL library (single file, no dependencies)
 
 
 ### Installation
-Download the file from [release page](https://github.com/esyede/curly) and drop to your project. That's it.
+Download the file from [release page](https://github.com/esyede/curly/releases) and drop to your project. That's it.
 
 
 
