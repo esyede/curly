@@ -51,10 +51,7 @@ $response = Curl::delete('https://reqres.in/api/users', $parameters);
 
 **Downloading file:**
 ```php
-$target = 'https://github.com/esyede/eddie/archive/master.zip';
-$destination = path('storage').'eddie.zip';
-
-if (Curl::download($target, $destination)) {
+if (Curl::download('https://github.com/esyede/eddie/archive/master.zip', 'eddie.zip')) {
 	// Yay! it's downloaded!
 }
 ```
