@@ -27,7 +27,7 @@ $response = Curl::get('https://reqres.in/api/users?page=2');
 
 **Sending a POST request:**
 ```php
-$parameters = $parameters = ['name' =>  'Danang', 'age' => 25];
+$parameters = ['name' =>  'Danang', 'age' => 25];
 
 $response = Curl::post('https://reqres.in/api/users', $parameters);
 ```
