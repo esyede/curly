@@ -21,7 +21,9 @@ Now, let's try sending simple request using this library:
 
 **Sending a GET request:**
 ```php
-$response = Curl::get('https://reqres.in/api/users?page=2');
+use Esyede\Curly;
+
+$response = Curly::get('https://reqres.in/api/users?page=2');
 ```
 
 
@@ -29,7 +31,7 @@ $response = Curl::get('https://reqres.in/api/users?page=2');
 ```php
 $parameters = ['name' =>  'Danang', 'age' => 25];
 
-$response = Curl::post('https://reqres.in/api/users', $parameters);
+$response = Curly::post('https://reqres.in/api/users', $parameters);
 ```
 
 
@@ -37,7 +39,7 @@ $response = Curl::post('https://reqres.in/api/users', $parameters);
 ```php
 $parameters = ['name' =>  'Agus', 'age' => 24];
 
-$response = Curl::put('https://reqres.in/api/users', $parameters);
+$response = Curly::put('https://reqres.in/api/users', $parameters);
 ```
 
 
@@ -45,14 +47,14 @@ $response = Curl::put('https://reqres.in/api/users', $parameters);
 ```php
 $parameters = ['id' => 6];
 
-$response = Curl::delete('https://reqres.in/api/users', $parameters);
+$response = Curly::delete('https://reqres.in/api/users', $parameters);
 ```
 
 
 **Downloading file:**
 ```php
-if (Curl::download('https://github.com/esyede/eddie/archive/master.zip', 'eddie.zip')) {
-	// Yay! it's downloaded!
+if (Curly::download('https://github.com/esyede/eddie/archive/master.zip', 'eddie.zip')) {
+	// Yay! file is downloaded!
 }
 ```
 
