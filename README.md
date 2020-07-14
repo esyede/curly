@@ -93,7 +93,7 @@ $response = Curly::get('https://foobar.com', $parameters, $custom_options);
 
 List of supported options is available on the [PHP cURL documentation](https://www.php.net/manual/en/function.curl-setopt.php).
 
-That pretty much it. Thank you for stopping by!
+That's pretty much it. Thank you for stopping by!
 
 
 
