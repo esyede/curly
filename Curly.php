@@ -91,7 +91,7 @@ class Curly
      *
      * @return \stdClass
      */
-    public static function request($method = 'get', $url, array $params = [], array $options = [])
+    public static function request($method, $url, array $params = [], array $options = [])
     {
         if (! static::available()) {
             throw new \RuntimeException('cURL extension is not available.');
@@ -99,6 +99,12 @@ class Curly
 
         if (! in_array($method, ['get', 'post', 'put', 'delete'])) {
         	throw new \Exception('Request method is not supported: '.$method);
+        }
+
+        $method = (string) $method;
+
+        if (! in_array(strtolower($method), ['get', 'post', 'put', 'delete'])) {
+          throw new \InvalidArgumentException(sprintf('Unsupported request method: %s', $method));
         }
 
         // Set lokasi default penyimpanan sertifikat ssl.
