@@ -101,7 +101,9 @@ class Curly
         	throw new \Exception('Request method is not supported: '.$method);
         }
 
-        $method = (string) $method;
+        if (! is_string($method)) {
+          throw new \InvalidArgumentException('Request method should be a string.');
+        }
 
         if (! in_array(strtolower($method), ['get', 'post', 'put', 'delete'])) {
           throw new \InvalidArgumentException(sprintf('Unsupported request method: %s', $method));
