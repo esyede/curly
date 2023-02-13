@@ -97,10 +97,6 @@ class Curly
             throw new \RuntimeException('cURL extension is not available.');
         }
 
-        if (! in_array($method, ['get', 'post', 'put', 'delete'])) {
-        	throw new \Exception('Request method is not supported: '.$method);
-        }
-
         if (! is_string($method)) {
           throw new \InvalidArgumentException('Request method should be a string.');
         }
