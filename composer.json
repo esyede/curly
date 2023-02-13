@@ -1,0 +1,30 @@
+{
+    "name": "esyede/curly",
+    "description": "Standalone cURL library (single file, no dependencies)",
+    "type": "library",
+    "require": {
+        "php": ">=5.4",
+        "ext-curl": "*"
+    },
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/esyede/curly/issues",
+        "source": "https://github.com/esyede/curly"
+    },
+    "authors": [
+        {
+            "name": "Suyadi",
+            "email": "suyadi.1992@gmail.com"
+        },
+        {
+            "name": "ZerosDev",
+            "email": "admin@zeros.co.id"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Esyede\\Curly\\": "src/"
+        }
+    }
+}
